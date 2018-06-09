@@ -1,0 +1,15 @@
+Emacs Notes
+
+* Comments
+  M-; - comments and uncomments multiple lines of code
+
+* Cmake ide 
+  compile the project with cmake and use the:
+  cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 
+  or add this line to the cmakelists.txt file
+  set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+  then in the project directory, pres M-:
+  (setq cmake-ide-build-dir "/path/to/project")
+
+  BANG! it should work now.
